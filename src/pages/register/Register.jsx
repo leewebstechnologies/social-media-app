@@ -1,7 +1,7 @@
-import "./register.css";
+import "./register.scss";
 
 const Register = () => {
-  return <div>Register</div>;
+  return <div className="register">Register</div>;
 };
 
 export default Register;
