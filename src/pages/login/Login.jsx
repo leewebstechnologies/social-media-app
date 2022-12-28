@@ -1,17 +1,23 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/authContext";
 import "./login.scss";
 
 const Login = () => {
+  const { login } = useContext(AuthContext);
+
+  const handleLogin = () => {
+    login();
+  };
+
   return (
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World!</h1>
+          <h1>Hello World.</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
-            aperiam harum modi, vel excepturi odio officiis. Adipisci, hic
-            consectetur rerum quod animi optio placeat obcaecati sequi minus
-            alias, recusandae itaque!
+            React Js is a JavaScript library used to create interactive
+            websites. It is a tool used for building UI components.
           </p>
           <span>Don't you have an account?</span>
           <Link to="/register">
@@ -23,7 +29,7 @@ const Login = () => {
           <form>
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
-            <button>Login</button>
+            <button onClick={handleLogin}>Login</button>
           </form>
         </div>
       </div>

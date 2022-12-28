@@ -7,12 +7,7 @@ const Register = () => {
       <div className="card">
         <div className="left">
           <h1>Social Media App</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
-            aperiam harum modi, vel excepturi odio officiis. Adipisci, hic
-            consectetur rerum quod animi optio placeat obcaecati sequi minus
-            alias, recusandae itaque!
-          </p>
+          <p>Social Media created using React Js.</p>
           <span>Do you have an account?</span>
           <Link to="/login">
             <button>Login</button>
