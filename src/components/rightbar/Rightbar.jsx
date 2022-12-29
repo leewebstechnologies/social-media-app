@@ -1,8 +1,8 @@
-import "./rightBar.scss";
+import "./rightbar.scss";
 
-const RightBar = () => {
+const Rightbar = () => {
   return (
-    <div className="rightBar">
+    <div className="rightbar">
       <div className="container">
         <div className="item">
           <span>Suggestions For You</span>
@@ -202,4 +202,4 @@ const RightBar = () => {
   );
 };
 
-export default RightBar;
+export default Rightbar;
